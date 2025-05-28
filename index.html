@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Barbería Elite</title>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     body {
       margin: 0;
@@ -15,13 +16,14 @@
     }
 
     header {
-      background: url('https://via.placeholder.com/1500x800') no-repeat center center/cover;
+      background: url('https://images.unsplash.com/photo-1605051809185-7881ad59dc31') no-repeat center center/cover;
       height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
+      color: #fff;
     }
 
     header h1 {
@@ -51,7 +53,7 @@
 
     .services {
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
       flex-wrap: wrap;
     }
 
@@ -61,6 +63,20 @@
       padding: 20px;
       background: #222;
       border-radius: 8px;
+      text-align: center;
+    }
+
+    .service img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .service i {
+      font-size: 24px;
+      margin-bottom: 10px;
     }
 
     input, textarea {
@@ -89,18 +105,28 @@
 <section>
   <h2>Servicios</h2>
   <div class="services">
-    <div class="service">✂️ Corte de Cabello</div>
-    <div class="service">🪒 Afeitado Clásico</div>
-    <div class="service">🧔 Arreglo de Barba</div>
+    <div class="service">
+      <img src="https://images.unsplash.com/photo-1627843240597-f9633a674e43" alt="Corte de cabello" />
+      <i class="fas fa-scissors"></i>
+      <h3>Corte de Cabello</h3>
+    </div>
+    <div class="service">
+      <img src="https://images.unsplash.com/photo-1559599238-2c9d0b1c03a6" alt="Afeitado clásico" />
+      <i class="fas fa-razor"></i>
+      <h3>Afeitado Clásico</h3>
+    </div>
+    <div class="service">
+      <img src="https://images.unsplash.com/photo-1615966651661-8bdfe166c2b9" alt="Arreglo de barba" />
+      <i class="fas fa-beard"></i>
+      <h3>Arreglo de Barba</h3>
+    </div>
   </div>
 </section>
 
 <section>
   <h2>¿Dónde estamos?</h2>
-  <p>📍 Av. Principal #123, Ciudad</p>
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!..." 
-    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  <p><i class="fas fa-map-marker-alt"></i> Av. Principal #123, Ciudad</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 </section>
 
 <section>
@@ -134,7 +160,7 @@
   text-decoration: none;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 ">
-  💬
+  <i class="fab fa-whatsapp"></i>
 </a>
 
 </body>
